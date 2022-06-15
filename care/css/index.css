@@ -1,0 +1,33 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.container-fluid {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+}
+
+.centering {
+  height: 80%;
+  width: 65%;
+  background-color: #fff;
+}
+
+.input-form {
+  padding: 10%;
+}
+
+.btn-group {
+  margin-top: 5%;
+}
+
+.res {
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: center;
+}

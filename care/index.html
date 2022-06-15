@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>長照人員 Care</title>
+
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="centering">
+      <div class="input-form">
+        <h3>授權病歷資料</h3>
+        <div class="mb-3">
+          <label for="patient-name-input" class="form-label">病患姓名</label>
+          <input type="text" class="form-control" id="patient-name" aria-describedby="emailHelp">
+        
+        </div>
+        <div class="mb-3">
+          <label for="hospital-name-input" class="form-label">醫院名稱</label>
+          <input type="text" class="form-control" id="hospital-name">
+        </div>
+        
+        <div class="btn-group">
+          <!-- <button type="button" class="btn btn-outline-primary">讀取</button> -->
+          <button type="button" class="btn btn-outline-primary" onclick="launchTx()">送出(發起跨鏈交易)</button>
+        </div>
+
+      </div>
+      <div class="res" id="res-content">
+        return url
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
