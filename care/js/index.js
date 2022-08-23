@@ -18,16 +18,16 @@ function launchTx() {
       chainName: "src",
     },
     destination: {
-      chainName: hospitalName,
+      chainName: "dest",
     },
     txType: "Req",
-    txContent: "/" + patientName + "/record.pdf",
+    txContent: "/idsl/record.png"
   };
 
   console.log(data);
 
   // 發起跨鏈交易
-  fetch("http://140.118.9.225:9191/transaction/launch", {
+  fetch("http://localhost:9191/transaction/launch", {
     method: "POST",
     headers: new Headers({
       "Content-Type": "application/json",
